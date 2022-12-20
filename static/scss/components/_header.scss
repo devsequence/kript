@@ -1,0 +1,121 @@
+.header{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 18px 0 17px;
+  background: #fff;
+  &.scroll-nav{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+  &-logo{
+    a{
+      display: block;
+    }
+  }
+  &-nav{
+    margin: 0 61px 0 auto;
+    ul{
+      display: flex;
+    }
+    li{
+      margin-right: 56px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+      &.has-sub{
+        a{
+
+          position: relative;
+          &:after{
+            position: absolute;
+            content: '';
+            right: -20px;
+            top: 50%;
+            margin-top: -4px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='8' viewBox='0 0 13 8' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.27434 6.98142L5.69861 7.40568C5.89387 7.60095 6.21045 7.60095 6.40571 7.40568L6.82998 6.98142L11.9579 1.85352C12.1531 1.65826 12.1531 1.34168 11.9579 1.14642L11.8872 1.07571C11.6919 0.880445 11.3753 0.880445 11.1801 1.07571L6.40571 5.85005C6.21045 6.04531 5.89387 6.04531 5.69861 5.85005L0.924264 1.07571C0.729002 0.880445 0.41242 0.880445 0.217157 1.07571L0.146447 1.14642C-0.0488156 1.34168 -0.0488155 1.65826 0.146447 1.85352L5.27434 6.98142Z' fill='%2309090A'/%3E%3C/svg%3E");
+            width: 13px;
+            height: 8px;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+    a{
+      font-family: $Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #09090A;
+      &.active, &:hover{
+        &:after{
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+.header-overlay{
+  display: none;
+}
+.header-btn{
+  display: none;
+  position: relative;
+  width: 20px;
+  height: 14px;
+  margin: 0 0 0 10px;
+  &:before, &:after, span{
+    position: absolute;
+    background: #FFCD66;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    transition: all ease 300ms;
+  }
+  &:before,
+  &:after{
+    content: '';
+  }
+  &:before{
+    top: 0;
+  }
+  &:after{
+    top: calc(100% - 2px);
+  }
+  span{
+    top: 50%;
+    margin-top: -1px;
+  }
+  &.active{
+    &:before,
+    &:after{
+      content: '';
+      width: 100%;
+      top: 50%;
+      margin-top: -2px;
+    }
+    span{
+      opacity: 0;
+    }
+    &:before{
+      transform: rotate(45deg);
+    }
+    &:after{
+      transform: rotate(-45deg);
+    }
+  }
+}

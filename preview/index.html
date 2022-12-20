@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<title>title</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#000">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#000">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../static/css/slick.min.css">
+<link rel="stylesheet" href="../static/css/index.css">
+<!--<link rel="shortcut icon" href="../static/images/fav.png"/>-->
+
+</head>
+<body class="home">
+<!--page-wrapper-->
+<div class="page-wrapper">
+	<header class="header wrapper" id="header">
+    <div class="container">
+        <div class="header-logo">
+            <a href="#" class="nav-link">
+                <img src="../static/images/general/logo.svg">
+            </a>
+        </div>
+        <div class="header-nav">
+            <ul>
+                <li class="has-sub">
+                    <a href="#">Курсы валют</a>
+                </li>
+                <li class="has-sub">
+                    <a href="#">Обмен</a>
+                </li>
+                <li class="has-sub">
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Реферальная программа</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-btn">
+            <span></span>
+        </div>
+    </div>
+</header>
+	<!--page-content-->
+    <div class="page-content">
+        <section id="hero"  class="hero">
+            <div class="hero-media" style="background: #000">
+                <picture>
+                    <source srcset="../static/images/general/hero-mob.png"
+                            media="(max-width: 576px)">
+                    <img src="../static/images/general/hero.png" alt="hero">
+                </picture>
+            </div>
+            <div class="container">
+                <div class="hero-desc">
+                    <div class="hero-title">
+                        Купить криптовалюту за гривны в Украине
+                    </div>
+                    <div class="hero-text">
+                        Быстро, автоматически и никаких скрытых комиссий. Самый простой способ продать или купить криптовалюту за гривны в режиме онлайн. Минимальная форма идентификации личности. Поддержка любых банковских карт Украины.
+                    </div>
+                    <div class="hero-list">
+                        <ul>
+                            <li>
+                                Транзакции
+                                <span>от 2 000 до 25 000 грн</span>
+                            </li>
+                            <li>
+                                Месячный лимит
+                                <span>150 000 грн</span>
+                            </li>
+                            <li>
+                                Комиссия
+                                <span>без доп. комиссий</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hero-form">
+                    <form action="#">
+                        <div class="hero-form__item">
+                            <div class="select-item">
+                                <label for="crypto">Отправляете: </label>
+                                <select class="select" id="crypto">
+                                    <option value="Bitcoin (BTC)">Bitcoin (BTC)</option>
+                                    <option value="Ethereum (ETH)">Ethereum (ETH)</option>
+                                    <option value="Tether (USDT)">Tether (USDT)</option>
+                                    <option value="Likecoin (LTC)">Likecoin (LTC)</option>
+                                    <option value="Dogecoin (DOGE)">Dogecoin (DOGE)</option>
+                                </select>
+                            </div>
+                            <div class="input-item">
+                                <label for="crypto-sum">Сумма:</label>
+                                <input type="text" id="crypto-sum" value="" placeholder="0.2332456" required>
+                                <span class="label-name">(BTC)</span>
+                            </div>
+                            <div class="info">Курс обновится через 0 сек.</div>
+                        </div>
+                        <div class="hero-form__item">
+                            <div class="select-item">
+                                <label for="money">Отправляете: </label>
+                                <select class="select" id="money">
+                                    <option value="Наличные USD">Наличные USD</option>
+                                    <option value="Наличные UAH">Наличные UAH</option>
+                                </select>
+                            </div>
+                            <div class="input-item">
+                                <label for="money-sum">Получаете:</label>
+                                <input type="text" id="money-sum" value="" placeholder="0.2332456" required>
+                                <span class="label-name">USD</span>
+                            </div>
+                            <div class="info">Min: 1600 USD. Max: 100000 USD</div>
+                        </div>
+                        <div class="hero-form__item hero-form__telegram">
+                            <div class="telegram-item">
+                                <label for="telegram">Ник в telegram</label>
+                                <input type="text" id="telegram" value="" placeholder="@" required>
+                            </div>
+                        </div>
+                        <div class="hero-form__info">
+                            Нажимая кнопку “Получить USD”, Вы принимаете <a href="#">Пользовательское соглашение</a> и
+                            <a href="#">Условия обмена.</a>
+                        </div>
+                        <button type="submit" class="btn-primary"><span>Получить USD</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="information">
+            <div class="container">
+                <div class="information-wrap">
+                    <div class="information-item">
+                        <div class="information-item__numb">49 024</div>
+                        <div class="information-item__title">Общее количество обменов</div>
+                    </div>
+                    <div class="information-item">
+                        <div class="information-item__numb">115</div>
+                        <div class="information-item__title">Обменов за 24 ч.</div>
+                    </div>
+                    <div class="information-item">
+                        <div class="information-item__numb">378 238 121</div>
+                        <div class="information-item__title">Общая сумма обменов, UAH</div>
+                    </div>
+                    <div class="information-item">
+                        <div class="information-item__numb">865 742</div>
+                        <div class="information-item__title">Сумма обменов за 24 ч., UAH </div>
+                    </div>
+                </div>
+                <div class="title-section">
+                    Популярные валюты
+                </div>
+                <div class="currency-table">
+                    <div class="currency-item">
+                        <div class="currency-item__name">Криптовалюта</div>
+                        <div class="currency-item__price">Цена, UAH</div>
+                        <div class="currency-item__price">Цена, USD</div>
+                        <div class="currency-item__buy">Комиссия на покупку</div>
+                        <div class="currency-item__sell">Комиссия на продажу</div>
+                    </div>
+                    <div class="currency-item">
+                        <div class="currency-item__name">
+                            <img src="../static/images/general/bitcoin-l.svg" alt="bitcoin">
+                            Bitcoin
+                            <span>BTC</span>
+                        </div>
+                        <div class="currency-item__price">664 725.71</div>
+                        <div class="currency-item__price">18009,71</div>
+                        <div class="currency-item__buy">0.2%</div>
+                        <div class="currency-item__sell">0.8%</div>
+                    </div>
+                    <div class="currency-item">
+                        <div class="currency-item__name">
+                            <img src="../static/images/general/Ethereum.svg" alt="Ethereum">
+                            Ethereum
+                            <span>ETH</span>
+                        </div>
+                        <div class="currency-item__price">48 976.99</div>
+                        <div class="currency-item__price">1326,96</div>
+                        <div class="currency-item__buy">0.12%</div>
+                        <div class="currency-item__sell">0.5%</div>
+                    </div>
+                    <div class="currency-item">
+                        <div class="currency-item__name">
+                            <img src="../static/images/general/Tether.svg" alt="Tether">
+                            Tether
+                            <span>USDT</span>
+                        </div>
+                        <div class="currency-item__price">39.17</div>
+                        <div class="currency-item__price">39.17</div>
+                        <div class="currency-item__buy">1%</div>
+                        <div class="currency-item__sell">0.5%</div>
+                    </div>
+                    <div class="currency-item">
+                        <div class="currency-item__name">
+                            <img src="../static/images/general/Likecoin.svg" alt="Likecoin">
+                            Likecoin
+                            <span>LTC</span>
+                        </div>
+                        <div class="currency-item__price">2 988.61</div>
+                        <div class="currency-item__price">1,06</div>
+                        <div class="currency-item__buy">0.56%</div>
+                        <div class="currency-item__sell">1%</div>
+                    </div>
+                    <div class="currency-item">
+                        <div class="currency-item__name">
+                            <img src="../static/images/general/Dogecoin.svg" alt="Dogecoin">
+                            Dogecoin
+                            <span>DOGE</span>
+                        </div>
+                        <div class="currency-item__price">3.81</div>
+                        <div class="currency-item__price">0,10</div>
+                        <div class="currency-item__buy">0.01%</div>
+                        <div class="currency-item__sell">0.02%</div>
+                    </div>
+                </div>
+                <div class="currency-link">
+                    <a href="#" class="btn-secondary"><span>Получить USD</span></a>
+                </div>
+            </div>
+        </section>
+        <section class="advantage">
+            <div class="container">
+                <div class="advantage-wrap">
+                    <div class="advantage-item">
+                        <div class="advantage-item__title">
+                            Реферальная программа
+                        </div>
+                        <div class="advantage-item__text">
+                            Зарабатывайте вместе с нами. Получайте 1% от суммы транзакции каждого приглашенного пользователя.
+                        </div>
+                        <div class="advantage-item__media">
+                            <img src="../static/images/general/advantage-1.svg" alt="advantage">
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-item__title">
+                            Личный кабинет
+                        </div>
+                        <div class="advantage-item__text">
+                            Регистрируйтесь, чтобы получать быстрый доступ к истории транзакций, бонусов и наших обновлений.
+                        </div>
+                        <div class="advantage-item__media">
+                            <img src="../static/images/general/advantage-2.svg" alt="advantage">
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-item__title">
+                            Быстрый обмен
+                        </div>
+                        <div class="advantage-item__text">
+                            Без ручной модерации, полностью автоматизированный процесс регистрации и обмена.
+                        </div>
+                        <div class="advantage-item__media">
+                            <img src="../static/images/general/advantage-3.svg" alt="advantage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="excellence">
+            <div class="container">
+                <div class="excellence-desc">
+                    <div class="title-section title-section__white">
+                        Преимущества обмена криптовалюты у нас:
+                    </div>
+                    <div class="excellence-desc__text">
+                        Наша команда выкладывается на все 100% чтобы наши услуги всегда были актуальными и  обновлять свои услуги чтобы каждый остался довольным.
+                    </div>
+                    <div class="excellence-desc__link">
+                        <a href="#" class="btn-secondary"><span>Узнать больше</span></a>
+                    </div>
+                </div>
+                <div class="excellence-wrap">
+                    <div class="excellence-item">
+                        <div class="excellence-item__title">
+                            <img src="../static/images/general/excellence-1.png" alt="excellence">
+                            <span>Удобно</span>
+                        </div>
+                        <div class="excellence-item__text">
+                            Понятный интерфейс и 4 простых шага обмена. Покупайте, продавайте и обменивайте криптовалюту онлайн в любое время.
+                        </div>
+                    </div>
+                    <div class="excellence-item">
+                        <div class="excellence-item__title">
+                            <img src="../static/images/general/excellence-2.png" alt="excellence">
+                            <span>Выгодно</span>
+                        </div>
+                        <div class="excellence-item__text">
+                            Без скрытых комиссий и дополнительных платежей. Совершайте транзакции по выгодному курсу с любых банковских карт Украины.
+                        </div>
+                    </div>
+                    <div class="excellence-item">
+                        <div class="excellence-item__title">
+                            <img src="../static/images/general/excellence-3.png" alt="excellence">
+                            <span>Надежно</span>
+                        </div>
+                        <div class="excellence-item__text">
+                            Гарантируем безопасный и конфиденциальный обмен. Будьте уверены, передаваемые вами данные под защитой, а проведение операций под контролем.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container">
+                <div class="work-desc">
+                    <div class="title-section title-section__gold">Как мы работаем:</div>
+                    <div class="work-text">
+                        Вы оформляете заявку по сумме и направлению обмена. <br>
+                        Наш менеджер с вами связывается и уточняет подробности, а также подбирает наиболее удобное время и место для обмена(курьерская доставка доступна), после чего вы приходите в назначенное время, пересчитываете деньги и отправляете криптовалюту, либо если вы покупаете, то вносите оплату, мы отправляем вам вашу крипту, ждём подтверждение и завершаем обмен.
+                    </div>
+                    <div class="work-info">
+                        <b>Наш адрес офиса:</b> Бунина 8а м. Одеса
+                    </div>
+                </div>
+                <div class="work-media">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.378288389949!2d30.7464812!3d46.480821399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6319f17199f4f%3A0x54bfc40a6d130f5a!2z0YPQuy4g0JHRg9C90LjQvdCwLCA4LCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1671222419611!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container">
+                <div class="title-section title-section__white">Наши новости:</div>
+                <div class="blog-wrap">
+                    <div class="blog-item">
+                        <div class="blog-item__media">
+                            <a href="#"><img src="../static/images/general/blog-1.jpg" alt="blog"></a>
+                        </div>
+                        <div class="blog-item__desc">
+                            <div class="blog-item__title">
+                                <a href="#">Как майнить Эфириум через мобильный телефон</a>
+                            </div>
+                            <div class="blog-item__text">
+                                Сегодня миллионы людей по всему миру получают стабильный доход на добыче цифровых монет. А делать это можно даже с мобильного устройства.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-item__media">
+                            <img src="../static/images/general/blog-2.jpg" alt="blog">
+                        </div>
+                        <div class="blog-item__desc">
+                            <div class="blog-item__title">
+                                Когда добудут последний Биткоин: перспективы криптовалюты
+                            </div>
+                            <div class="blog-item__text">
+                                Экосистема Bitcoin все еще развивается, что делает возможным, то, что сам Биткоин продолжит развиваться в ближайшие десятилетия. Но как бы ни развивалась криптовалюта, новые монеты не будут выпущены после достижения лимита в 21 миллион единиц.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-item__media">
+                            <img src="../static/images/general/blog-3.jpg" alt="blog">
+                        </div>
+                        <div class="blog-item__desc">
+                            <div class="blog-item__title">
+                                Делистинг криптовалют: объяснение, примеры, принцип работы
+                            </div>
+                            <div class="blog-item__text">
+                                На каждый успешный цифровой актив приходится множество неудачных, что приводит к исключению таких проектов из списка криптобирж.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="title-section title-section__gold">Отзывы клиентов</div>
+            </div>
+            <div class="reviews-wrap">
+                <div class="reviews-slider">
+                    <div class="slide">
+                        <div class="reviews-item">
+                            <div class="reviews-item__rating">
+                                <img src="../static/images/general/rating.svg" alt="">
+                            </div>
+                            <div class="reviews-item__text">
+                                До того как я попал на этот сервер, покупал криптовалюту на других сайтах.Здесь намного проще и понятнее. Видно сразу все комиссии. Понятно сколько получишь, без всяких скрытых платежей. Пользовался уже несколько раз. Никакихх непонятных ситуаций не было.
+                            </div>
+                            <div class="reviews-item__date">
+                                Сергей, 05.07.2022
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="reviews-item">
+                            <div class="reviews-item__rating">
+                                <img src="../static/images/general/rating.svg" alt="">
+                            </div>
+                            <div class="reviews-item__text">
+                                До того как я попал на этот сервер, покупал криптовалюту на других сайтах.Здесь намного проще и понятнее. Видно сразу все комиссии. Понятно сколько получишь, без всяких скрытых платежей. Пользовался уже несколько раз. Никакихх непонятных ситуаций не было.
+                            </div>
+                            <div class="reviews-item__date">
+                                Сергей, 05.07.2022
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="reviews-item">
+                            <div class="reviews-item__rating">
+                                <img src="../static/images/general/rating.svg" alt="">
+                            </div>
+                            <div class="reviews-item__text">
+                                До того как я попал на этот сервер, покупал криптовалюту на других сайтах.Здесь намного проще и понятнее. Видно сразу все комиссии. Понятно сколько получишь, без всяких скрытых платежей. Пользовался уже несколько раз. Никакихх непонятных ситуаций не было.
+                            </div>
+                            <div class="reviews-item__date">
+                                Сергей, 05.07.2022
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="reviews-item">
+                            <div class="reviews-item__rating">
+                                <img src="../static/images/general/rating.svg" alt="">
+                            </div>
+                            <div class="reviews-item__text">
+                                До того как я попал на этот сервер, покупал криптовалюту на других сайтах.Здесь намного проще и понятнее. Видно сразу все комиссии. Понятно сколько получишь, без всяких скрытых платежей. Пользовался уже несколько раз. Никакихх непонятных ситуаций не было.
+                            </div>
+                            <div class="reviews-item__date">
+                                Сергей, 05.07.2022
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="reviews-item">
+                            <div class="reviews-item__rating">
+                                <img src="../static/images/general/rating.svg" alt="">
+                            </div>
+                            <div class="reviews-item__text">
+                                До того как я попал на этот сервер, покупал криптовалюту на других сайтах.Здесь намного проще и понятнее. Видно сразу все комиссии. Понятно сколько получишь, без всяких скрытых платежей. Пользовался уже несколько раз. Никакихх непонятных ситуаций не было.
+                            </div>
+                            <div class="reviews-item__date">
+                                Сергей, 05.07.2022
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="reviews-item">
+                            <div class="reviews-item__rating">
+                                <img src="../static/images/general/rating.svg" alt="">
+                            </div>
+                            <div class="reviews-item__text">
+                                До того как я попал на этот сервер, покупал криптовалюту на других сайтах.Здесь намного проще и понятнее. Видно сразу все комиссии. Понятно сколько получишь, без всяких скрытых платежей. Пользовался уже несколько раз. Никакихх непонятных ситуаций не было.
+                            </div>
+                            <div class="reviews-item__date">
+                                Сергей, 05.07.2022
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="reviews-item">
+                            <div class="reviews-item__rating">
+                                <img src="../static/images/general/rating.svg" alt="">
+                            </div>
+                            <div class="reviews-item__text">
+                                До того как я попал на этот сервер, покупал криптовалюту на других сайтах.Здесь намного проще и понятнее. Видно сразу все комиссии. Понятно сколько получишь, без всяких скрытых платежей. Пользовался уже несколько раз. Никакихх непонятных ситуаций не было.
+                            </div>
+                            <div class="reviews-item__date">
+                                Сергей, 05.07.2022
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="reviews-item">
+                            <div class="reviews-item__rating">
+                                <img src="../static/images/general/rating.svg" alt="">
+                            </div>
+                            <div class="reviews-item__text">
+                                До того как я попал на этот сервер, покупал криптовалюту на других сайтах.Здесь намного проще и понятнее. Видно сразу все комиссии. Понятно сколько получишь, без всяких скрытых платежей. Пользовался уже несколько раз. Никакихх непонятных ситуаций не было.
+                            </div>
+                            <div class="reviews-item__date">
+                                Сергей, 05.07.2022
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why">
+            <div class="container">
+                <div class="why-media">
+                    <img src="../static/images/general/why-img.png" alt="">
+                </div>
+                <div class="why-wrap">
+                    <div class="why-desc">
+                        <div class="title-section">
+                            Почему выбирают наш онлайн обменник криптовалюты
+                        </div>
+                        <div class="why-text">
+                            <p>
+                                <b>Changeit</b>
+                                 — это надежный и простой способ совершать операции с криптовалютами в Украине.
+                            </p>
+                            Сервис имеет безупречную репутацию и предлагает лучшие условия обмена. Если вы решите купить криптовалюту онлайн на сервисе  <b> Changeit</b>, то получите профессиональную и оперативную поддержку, безопасность и простоту.
+                            <img src="../static/images/general/why-media.png" alt="">
+                        </div>
+                    </div>
+                    <div class="why-info">
+                        <p>Другие преимущества, которые выгодно выделяют платформу среди аналогов:</p>
+                        <ul>
+                            <li>
+                                <b>Узкая специализация.</b>
+                                 Онлайн криптообменник Changeit обменивает только Bitcoin и Ethereum, и только на гривны, что позволяет предлагать лучший курс на рынке.
+                            </li>
+                            <li>
+                                <b>Отсутствие скрытых комиссий.</b>
+                                Сумма на экране — фактическая сумма, которую заплатит пользователь.
+                            </li>
+                            <li>
+                                <b>Удобный и простой интерфейс.</b>
+                                 Сервис предлагает понятную и быструю процедуру обмена: 4 простых шага — и транзакция завершена.
+                            </li>
+                            <li>
+                                <b>Выгодные условия.</b>
+                                 Changeit — это всегда хороший курс, низкие комиссии, отсутствие рисков и прозрачный алгоритм работы.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="question">
+            <div class="container">
+                <div class="title-section">
+                    FAQ
+                </div>
+                <div class="question-wrap">
+                    <div class="question-info">
+                        <div class="text-section">
+                            Остались вопросы? Свяжитесь с нашей командой, написав нам на
+                            <a href="mailto:support@cryptoobmen.io" target="_blank">support@cryptoobmen.io</a>
+                        </div>
+                    </div>
+                    <div class="question-desc">
+                        <div class="question-faq">
+                            <div class="question-item active">
+                                <div class="question-item__title">
+                                    Какие валюты поддерживает ваш обменник?
+                                </div>
+                                <div class="question-item__text">
+                                    На данный момент на нашем обменнике вы можете купить/продать BTC, ETH, USDT, LTC, DASH и DOGE. Мы также работаем над добавлением других валют, возможность оперировать с которыми появится в скором будущем.
+                                </div>
+                            </div>
+                            <div class="question-item">
+                                <div class="question-item__title">
+                                    Существуют ли скрытые комиссии или какие-либо другие платежи при пользовании вашим обменником?
+                                </div>
+                                <div class="question-item__text">
+                                    На данный момент на нашем обменнике вы можете купить/продать BTC, ETH, USDT, LTC, DASH и DOGE. Мы также работаем над добавлением других валют, возможность оперировать с которыми появится в скором будущем.
+                                </div>
+                            </div>
+                            <div class="question-item">
+                                <div class="question-item__title">
+                                    Как создать криптокошелек?
+                                </div>
+                                <div class="question-item__text">
+                                    На данный момент на нашем обменнике вы можете купить/продать BTC, ETH, USDT, LTC, DASH и DOGE. Мы также работаем над добавлением других валют, возможность оперировать с которыми появится в скором будущем.
+                                </div>
+                            </div>
+                            <div class="question-item">
+                                <div class="question-item__title">
+                                    Легальна ли в Украине покупка криптовалюты?
+                                </div>
+                                <div class="question-item__text">
+                                    На данный момент на нашем обменнике вы можете купить/продать BTC, ETH, USDT, LTC, DASH и DOGE. Мы также работаем над добавлением других валют, возможность оперировать с которыми появится в скором будущем.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+	<!--page-content-->
+	<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer-logo">
+            <a href="#"><img src="../static/images/general/logo-wite.svg" alt="logo"></a>
+        </div>
+        <div class="footer-wrap">
+            <div class="footer-item">
+                <div class="footer-title">Курсы</div>
+                <ul>
+                    <li><a href="#">Курс Биткоина</a></li>
+                    <li><a href="#">Курс Эфириума</a></li>
+                    <li><a href="#">Курс USDT</a></li>
+                    <li><a href="#">Курс Лайткоина</a></li>
+                    <li><a href="#">Курс Догикоина</a></li>
+                    <li><a href="#">Курс Дашкоина</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <div class="footer-title">Продать</div>
+                <ul>
+                    <li><a href="#">Продать </a></li>
+                    <li><a href="#">Продать Биткоин </a></li>
+                    <li><a href="#">Продать Эфириум за гривну </a></li>
+                    <li><a href="#">Продать Биткоин Монобанк </a></li>
+                    <li><a href="#">Продать USDT за гривну</a></li>
+                </ul>
+                <div class="footer-title">Обмен</div>
+                <ul>
+                    <li><a href="#">Обменять Биткоин на Эфириум</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <div class="footer-title">Купить</div>
+                <ul>
+                    <li><a href="#">Купить Биткоин за гривну </a></li>
+                    <li><a href="#">Купить Эфириум за гривну </a></li>
+                    <li><a href="#">Купить USDT за гривну </a></li>
+                    <li><a href="#">Купить Лайткоин за гривну </a></li>
+                    <li><a href="#">Купить Догикоин за гривну </a></li>
+                    <li><a href="#">Купить Дашкоин за гривну </a></li>
+                    <li><a href="#">Купить Биткоин с карты </a></li>
+                    <li><a href="#">Купить Биткоин Монобанк</a></li>
+                    <li><a href="#">Биткоин за Приват24</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <div class="footer-title">Компания</div>
+                <ul>
+                    <li><a href="#">Наш обменник </a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Комиссии и лимиты </a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Реферальная программа</a></li>
+                    <li><a href="#">Офлайн обмен</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom__link">
+                <a href="#">www.logoipsum.com.ua</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Правила использования сайта </a>
+            </div>
+            <div class="footer-bottom__copy">
+                
+                <span>2018-2022. Все права защищены</span>
+                <a href="mailto:support@logoipsum.com.ua" target="_blank">support@logoipsum.com.ua</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 10 10" id="ic-cross" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.178L8.822 0 5 3.822 1.178 0 0 1.178 3.822 5 0 8.822 1.178 10 5 6.178 8.822 10 10 8.822 6.178 5 10 1.178z"/></symbol><symbol viewBox="0 0 21 39" id="ic-left" xmlns="http://www.w3.org/2000/svg"><path d="M19 2L3 19.5 19 37"/></symbol><symbol viewBox="0 0 21 39" id="ic-right" xmlns="http://www.w3.org/2000/svg"><path d="M2 2l16 17.5L2 37"/></symbol></svg>
+</div>
+<!-- build:js  ../static/js/lib.js -->
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/select2.min.js"></script>
+    <script type="text/javascript" src="../static/js/slick.min.js"></script>
+
+<!-- endbuild -->
+<script  type="text/javascript" src="../static/js/common.js"></script>
+
+
+
+</body>
+</html>

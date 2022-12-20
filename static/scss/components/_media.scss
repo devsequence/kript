@@ -1,0 +1,336 @@
+@media screen and (max-width: 1400px) {
+  .hero{
+    .container{
+      transform: translate(0, 0);
+      top: 100px;
+    }
+    &-form{
+      transform: translate(0, 100px);
+    }
+  }
+}
+@media screen and (max-width: 1110px) {
+  .title-section{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .hero{
+    &-title{
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &-text{
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &-list{
+      ul{
+        flex-direction: column;
+      }
+      span{
+        display: inline-block;
+      }
+    }
+    &-form {
+      padding: 17px 20px;
+      form{
+        label{
+          font-size: 13px;
+          line-height: 18px;
+        }
+
+        .select2-container .select2-selection--single .select2-selection__rendered{
+          font-size: 13px;
+          line-height: 16px;
+        }
+      }
+      .hero-form__item:nth-of-type(1) .select2:before, .hero-form__item:nth-of-type(2) .select2:before{
+        width: 21px;
+        height: 21px;
+        background-size: contain;
+      }
+      &__item {
+        .info{
+          font-size: 13px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+  .information-wrap{
+    margin-bottom: 45px;
+  }
+  .information-item{
+    &__numb{
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &__title{
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+  .currency-item{
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 6px;
+    &:first-of-type{
+      font-size: 14px;
+      line-height: 14px;
+      padding: 20px 0 0;
+    }
+    &:nth-of-type(2n){
+      margin: 0;
+    }
+    &:last-of-type{
+      margin-bottom: 15px;
+    }
+  }
+  .advantage-item {
+    overflow: hidden;
+    &__title{
+      font-size: 14px;
+      line-height: 15px;
+      margin-bottom: 10px;
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 15px;
+    }
+  }
+  .excellence-desc{
+    &__text{
+      font-size: 14px;
+      line-height: 15px;
+    }
+  }
+  .excellence-item{
+    padding: 0 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    &__title{
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 10px;
+      img{
+        width: 25px;
+        height: 25px;
+      }
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-btn{
+    display: block;
+  }
+  .header{
+    &:before{
+      position: absolute;
+      top: 100%;
+      content: '';
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+      opacity: 0;
+      visibility: hidden;
+      background: rgba(0,0,0,.4);
+      transition: all ease 300ms;
+    }
+    &:after{
+      position: absolute;
+      top: 0;
+      content: '';
+      right: 0;
+      width: 250px;
+      height: 100vh;
+      background: rgba(255, 255, 255, 1);
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+    }
+    &-nav{
+      transition: all ease 300ms;
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin: 0 15px 0 auto;
+      ul{
+        flex-direction: column;
+        width: 200px;
+      }
+      li{
+        margin: 0 0 10px;
+      }
+    }
+    &-phone{
+      transition: all ease 300ms;
+      position: absolute;
+      top: 220px;
+      right: 15px;
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+      a{
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+    &.active{
+      .header-nav{
+        opacity: 1;
+        visibility: visible;
+      }
+      .header-phone{
+        opacity: 1;
+        visibility: visible;
+      }
+      &:before{
+        opacity: 1;
+        visibility: visible;
+      }
+      &:after{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .information{
+    &-wrap{
+      flex-wrap: wrap;
+      padding: 15px;
+    }
+    &-item{
+      width: 50%;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section{
+    padding: 20px 0;
+  }
+  .advantage{
+    &-wrap{
+      flex-direction: column;
+    }
+    &-item{
+      max-width: 100%;
+      width: calc(100% - 20px);
+      margin-bottom: 10px;
+      min-height: 120px;
+      &__title{
+        max-width: 250px;
+      }
+      &__text{
+        max-width: 250px;
+      }
+      &__media{
+        max-width: 130px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      &:nth-of-type(1) {
+        .advantage-item__media{
+          left: auto;
+          transform: scale(-1, 1);
+          right: -3px;
+        }
+      }
+      &:nth-of-type(2) {
+        .advantage-item__title{
+          margin: 0 0 10px auto;
+        }
+        .advantage-item__text{
+          margin: 0 0 10px auto;
+        }
+        .advantage-item__media{
+
+          left: -3px;
+          right: auto;
+          transform: scale(-1, 1);
+        }
+      }
+      &:nth-of-type(3) {
+        .advantage-item__media{}
+      }
+    }
+  }
+  .currency-item{
+    span{
+      display: none;
+    }
+  }
+  .currency-link{
+    text-align: center;
+  }
+  .btn-secondary{
+    padding: 10px 42px;
+    span{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  .excellence {
+    .container{
+      flex-direction: column;
+    }
+    &-desc{
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 15px;
+      &__text{
+        max-width: 100%;
+      }
+      &__link{
+        text-align: center;
+      }
+    }
+    &-item{
+      max-width: 100%;
+    }
+    &-wrap{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .excellence-item{
+    width: 100%;
+    padding: 0;
+  }
+  .advantage-item{
+    padding: 17px 20px;
+  }
+  .currency{
+    &-table{
+      width: 100%;
+      overflow: auto;
+    }
+    &-item{
+      width: 760px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantage-item{
+    &__title,
+    &__text{
+      max-width: 160px;
+    }
+  }
+}

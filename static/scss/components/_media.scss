@@ -20,7 +20,48 @@
     padding: 20px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .why{
+    &-media{
+      img{
+        max-width: 520px;
+      }
+    }
+    &-desc{}
+    &-info{
+      max-width: 520px;
+    }
+  }
+}
 @media screen and (max-width: 1110px) {
+  .why{
+    .title-section{
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &-text, &-info{
+      font-size: 14px;
+      line-height: 16px;
+      p{
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    &-info{
+      padding-left: 20px;
+    }
+    &-media{
+      width: 55%;
+      img{
+        width: 100%;
+      }
+    }
+    &-desc{
+      img{
+        width: 100%;
+      }
+    }
+  }
   .title-section{
     font-size: 20px;
     line-height: 24px;
@@ -168,9 +209,72 @@
       line-height: 18px;
     }
   }
+  .footer{
+    &-title{
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &-item{
+      a{
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    &-bottom__link {
+      a{
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    &-bottom__copy {
+      a, span{
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+  .question{
+    .title-section{
+      margin-bottom: 20px;
+    }
+    &-wrap{
+      flex-wrap: wrap;
+    }
+    &-desc{
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &-info{
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 15px;
+      font-size: 14px;
+      line-height: 16px;
+      a{
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    &-item{
+      &__title{
+        font-size: 16px;
+        line-height: 18px;
+      }
+      &__text{
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .footer{
+    &-item{
+      width: 33.33333%;
+    }
+  }
   .blog{
     &-item{
       &__media{
@@ -292,6 +396,40 @@
 }
 
 @media screen and (max-width: 768px) {
+  .footer{
+    &-wrap{
+      margin: 0 -10px 45px;
+    }
+    &-item{
+      margin: 0 10px 20px;
+      width: calc(50% - 20px);
+    }
+  }
+  .why{
+    &-media{
+      position: relative;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: -70px auto 30px;
+    }
+    &-wrap{
+      flex-wrap: wrap;
+    }
+    &-desc{
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+    &-info{
+      padding-top: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .reviews{
+    padding: 0 0 110px;
+  }
   .blog{
     &-item{
       width: 100%;
@@ -441,9 +579,15 @@
       width: 760px;
     }
   }
+  .why-media{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 480px) {
-  .advantage-item{
+  .reviews-item__text {
+    min-height: unset;
+    }
+    .advantage-item{
     &__title,
     &__text{
       max-width: 160px;

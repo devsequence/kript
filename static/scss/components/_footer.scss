@@ -1,11 +1,13 @@
 .footer{
   background: #000;
   padding: 35px 0 35px;
+  overflow: hidden;
   &-logo{
     margin-bottom: 45px;
   }
   &-wrap{
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -24px 45px;
     position: relative;
     padding-bottom: 40px;
@@ -51,6 +53,7 @@
   &-bottom{
     &__link{
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 20px;
@@ -76,6 +79,7 @@
       display: flex;
       justify-content: space-between;
       width: 66.6666%;
+      flex-wrap: wrap;
       margin: 0 0 0 auto;
       span{
         font-weight: 600;

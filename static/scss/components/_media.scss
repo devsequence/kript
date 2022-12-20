@@ -1,3 +1,11 @@
+@media screen and (max-width: 1700px) {
+  .reviews-slider{
+    .slide{
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+  }
+}
 @media screen and (max-width: 1400px) {
   .hero{
     .container{
@@ -7,6 +15,9 @@
     &-form{
       transform: translate(0, 100px);
     }
+  }
+  .reviews-item{
+    padding: 20px;
   }
 }
 @media screen and (max-width: 1110px) {
@@ -67,16 +78,16 @@
     }
     &__title{
       font-size: 14px;
-      line-height: 14px;
+      line-height: 16px;
     }
   }
   .currency-item{
     font-size: 14px;
-    line-height: 14px;
+    line-height: 16px;
     padding: 10px 6px;
     &:first-of-type{
       font-size: 14px;
-      line-height: 14px;
+      line-height: 16px;
       padding: 20px 0 0;
     }
     &:nth-of-type(2n){
@@ -119,12 +130,77 @@
     }
     &__text{
       font-size: 14px;
-      line-height: 14px;
+      line-height: 16px;
+    }
+  }
+  .work{
+    &-text,
+    &-info{
+      font-size: 14px;
+      line-height: 16px;
+      padding-right: 15px;
+    }
+  }
+  .blog{
+    &-item{
+      &__title,
+      a{
+        font-size: 16px;
+        line-height: 18px;
+      }
+      &__desc{
+        width: calc(100% - 40px);
+        min-height: 250px;
+      }
+      &__text{
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+  .reviews-item{
+    &__text{
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &__date{
+      font-size: 16px;
+      line-height: 18px;
     }
   }
 }
 
 @media screen and (max-width: 992px) {
+  .blog{
+    &-item{
+      &__media{
+        height: 150px;
+      }
+      &__desc{
+        transform: translate(0, -25px);
+        min-height: 310px;
+      }
+    }
+  }
+  .work{
+    .container{
+      flex-direction: column;
+    }
+    &-desc{
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+    &-text,
+    &-info{
+      padding-right: 0;
+    }
+    &-media{
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
   .header-btn{
     display: block;
   }
@@ -216,8 +292,41 @@
 }
 
 @media screen and (max-width: 768px) {
+  .blog{
+    &-item{
+      width: 100%;
+      &__media{
+        height: 150px;
+        img{
+          object-fit: cover;
+        }
+      }
+      &__desc{
+        transform: translate(0, -25px);
+        min-height: unset;
+      }
+      &:nth-of-type(1){
+        .blog-item__desc{
+          border-radius: 30px 30px 0 0;
+        }
+      }
+      &:nth-of-type(2){
+        .blog-item__desc{
+          width: calc(100% - 40px);
+        }
+      }
+      &:nth-of-type(3){
+        .blog-item__desc{
+          border-radius: 0 0 30px 30px;
+        }
+      }
+    }
+  }
   section{
     padding: 20px 0;
+  }
+  .blog{
+    padding: 20px 0 0;
   }
   .advantage{
     &-wrap{
@@ -304,6 +413,13 @@
     }
     &-wrap{
       width: 100%;
+    }
+  }
+  .reviews {
+    .slick-dots {
+      li{
+        width: 30px;
+      }
     }
   }
 }

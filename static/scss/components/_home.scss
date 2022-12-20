@@ -586,7 +586,12 @@
 	color: #536295;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 	margin-bottom: 39px; }
-
+.slick-current{
+	.reviews-item {
+		opacity: 1;
+		box-shadow: 10px 10px 10px rgba(255, 205, 102, 0.6);
+	}
+}
 .reviews-item {
 	opacity: .7;
 	max-width: 420px;

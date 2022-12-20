@@ -1789,19 +1789,43 @@ input {
     display: inline-block; }
   .hero-form {
     padding: 17px 20px; }
+    .hero-form .select-item, .hero-form .input-item {
+      width: 50%; }
     .hero-form form label {
       font-size: 13px;
       line-height: 18px; }
+    .hero-form form input {
+      padding: 13px 18px 14px; }
+    .hero-form form input, .hero-form form .select2 {
+      width: 100% !important; }
     .hero-form form .select2-container .select2-selection--single .select2-selection__rendered {
       font-size: 13px;
       line-height: 16px; }
     .hero-form .hero-form__item:nth-of-type(1) .select2:before, .hero-form .hero-form__item:nth-of-type(2) .select2:before {
       width: 21px;
       height: 21px;
+      left: 7px;
+      top: 10px;
       background-size: contain; }
+    .hero-form__item:nth-of-type(1) {
+      padding-right: 10px; }
+    .hero-form__item:nth-of-type(2) {
+      padding-left: 10px; }
     .hero-form__item .info {
       font-size: 13px;
       line-height: 16px; }
+    .hero-form__info {
+      font-size: 13px;
+      line-height: 16px; }
+  .hero-form .select-item .label-name, .hero-form .input-item .label-name {
+    top: 47px; }
+  .hero-form form .select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 13px 28px 14px 35px; }
+  .hero-form form .select2-container--default .select2-selection--single {
+    height: 45px; }
+  .hero-form .select2-container--default .select2-selection--single .select2-selection__arrow {
+    width: 25px;
+    height: 45px; }
   .information-wrap {
     margin-bottom: 45px; }
   .information-item__numb {
@@ -1906,6 +1930,8 @@ input {
 @media screen and (max-width: 992px) {
   .footer-item {
     width: 33.33333%; }
+  .information {
+    padding: 200px 0 43px; }
   .blog-item__media {
     height: 150px; }
   .blog-item__desc {
@@ -1993,11 +2019,24 @@ input {
     margin-bottom: 15px; } }
 
 @media screen and (max-width: 768px) {
+  .hero-form__item {
+    width: 100%;
+    max-width: unset; }
+  .information {
+    padding: 300px 0 43px; }
   .footer-wrap {
     margin: 0 -10px 45px; }
   .footer-item {
     margin: 0 10px 20px;
     width: calc(50% - 20px); }
+  .footer-bottom__link {
+    flex-wrap: wrap;
+    margin: 0 -10px 15px; }
+    .footer-bottom__link a {
+      width: auto;
+      margin: 0 10px 10px; }
+  .footer-bottom__copy {
+    width: 100%; }
   .why-media {
     position: relative;
     top: 0;
@@ -2068,6 +2107,12 @@ input {
     display: none; }
   .currency-link {
     text-align: center; }
+  .btn-primary {
+    padding: 10px 42px; }
+    .btn-primary span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px; }
   .btn-secondary {
     padding: 10px 42px; }
     .btn-secondary span {
@@ -2106,7 +2151,25 @@ input {
     width: 100%; } }
 
 @media screen and (max-width: 480px) {
+  .hero-media {
+    min-height: 850px; }
+  .information {
+    padding: 240px 0 43px; }
   .reviews-item__text {
     min-height: unset; }
   .advantage-item__title, .advantage-item__text {
-    max-width: 160px; } }
+    max-width: 160px; }
+  .footer-bottom__copy {
+    flex-direction: column-reverse; }
+    .footer-bottom__copy span {
+      width: 100%;
+      margin-top: 10px;
+      text-align: center; } }
+
+@media screen and (max-width: 400px) {
+  .information {
+    padding: 180px 0 43px; } }
+
+@media screen and (max-width: 380px) {
+  .information {
+    padding: 140px 0 43px; } }

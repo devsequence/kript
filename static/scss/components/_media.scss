@@ -437,7 +437,7 @@
     max-width: unset;
   }
   .information {
-    padding: 300px 0 43px;
+    padding: 100px 0 43px;
   }
   .footer{
     &-wrap{
@@ -644,13 +644,22 @@
   .why-media{
     width: 100%;
   }
+  .hero-form__item:nth-of-type(1){
+    padding-right: 0;
+  }
+  .hero-form__item:nth-of-type(2){
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .hero-media{
     min-height: 850px;
   }
+  .hero-form {
+    transform: translate(0, 20px);
+  }
   .information {
-    padding: 240px 0 43px;
+    padding: 100px 0 43px;
   }
   .reviews-item__text {
     min-height: unset;
